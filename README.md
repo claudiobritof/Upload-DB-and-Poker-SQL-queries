@@ -14,4 +14,9 @@ Table ‘resultado’:
 Table ‘clientes’:
   Id: customer's id. Can be crossed with the customer_id information in the result table.
   Sexo: player's gender, being m=male and f=female.
-  
+  Data_nascimento: year, month and day of birth of the player.
+  Data_cadastro: date and time when the player registered.
+  Cidade: city where the player lives.
+  Sigla: UF (“Federative Unity”, in Brazil is the same as “state”) where the player lives.
+
+Considering these tables, the following questions will be answered using SQL:
