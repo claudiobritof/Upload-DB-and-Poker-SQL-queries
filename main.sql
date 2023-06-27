@@ -62,7 +62,7 @@ GROUP BY
     geracao;
 
 
-/*  b) Qual foi o rake gerado por mês? */
+/*  b) How much rake generated per month? */
 
 SELECT
     YEAR(data_acesso) AS ano,
@@ -74,7 +74,7 @@ GROUP BY
     Ano, Mes;
 
 
-/*  c) Qual sexo tem uma maior proporção de ganhadores**? */
+/*  c) Which gender has a higher proportion of winners*? */
 
 SELECT
     sexo,
