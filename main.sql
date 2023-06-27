@@ -11,7 +11,7 @@ CREATE TABLE clientes (
   sigla VARCHAR(2)
 );
 
-LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Área de Trabalho\\Jr_Data_Engineer_Evaluation\\1_SQL\\clientes.csv"
+LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\resultado.csv"
 INTO TABLE h2.clientes
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
