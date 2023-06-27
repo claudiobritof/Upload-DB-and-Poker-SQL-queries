@@ -56,6 +56,8 @@ SELECT
     END AS geracao,
     SUM(rake) AS totalRake
 /*Selecionando de qual tabela eu quero, e conectando "resultado" e "clientes" através do id, e mostranod geração por geração:  */
+/*Selecting which table do I want the data from, and connecting "resultado" and "clientes" by each id, and grouping by generation:  */
+	
 FROM
     resultado
     INNER JOIN clientes ON resultado.clientes_id = clientes.id_cliente
