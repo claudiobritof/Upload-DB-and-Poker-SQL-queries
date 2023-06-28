@@ -1,4 +1,4 @@
-id,sexo,data_nascimento,data_cadastro,cidade,sigla
+id,gender,birth_date,registration_date,city,province
 94722,m,1982-04-17,2023-03-17T12:41:30,São Paulo,SP
 505,m,1985-03-29,2017-10-11T22:21:33,São Paulo,SP
 43346,m,1991-06-11,2020-12-16T13:08:00,Belém,PA
