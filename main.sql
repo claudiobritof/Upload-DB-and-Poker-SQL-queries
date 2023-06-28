@@ -1,18 +1,18 @@
 /*  1) Uploading a local database and using SQL queries to answer questions related to customer results on a Online Poker Platform*/
 
-/* Creating table to receive CSV file 'clientes' (customers). I utilized "Table Data Import Wizard", but as a demonstration here, I copied some code lines from the DDL and simulated a LOAD DATA INFILE so you can understand the tables easier: */
+/* Creating table to receive CSV file 'customer'. I utilized "Table Data Import Wizard", but as a demonstration here, I copied some code lines from the DDL and simulated a LOAD DATA INFILE so you can understand the tables easier: */
 
-CREATE TABLE clientes (
+CREATE TABLE customer (
   id INT,
-  sexo VARCHAR(1) DEFAULT NULL,
-  data_nascimento DATE DEFAULT NULL,
-  data_cadastro DATETIME,
-  cidade VARCHAR(50),
-  sigla VARCHAR(2)
+  gender VARCHAR(1) DEFAULT NULL,
+  birth_date DATE DEFAULT NULL,
+  registration_date DATETIME,
+  city VARCHAR(50),
+  province VARCHAR(2)
 );
 
 LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\Datasets\\clientes.csv"
-INTO TABLE h2.clientes
+INTO TABLE h2.customer
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
@@ -22,16 +22,16 @@ IGNORE 1 LINES;
 
 /* Creating table to receive CSV file 'resultado' (result). I also utilized "Table Data Import Wizard", but again, as a demonstration here, I copied some code lines from the DDL and simulated a LOAD DATA INFILE so you can understand the tables easier: */
 
-CREATE TABLE `resultado` (
-  `data_acesso` text,
-  `clientes_id` int DEFAULT NULL,
+CREATE TABLE `result` (
+  `entry_date` text,
+  `customer_id` int DEFAULT NULL,
   `buyin` double DEFAULT NULL,
   `rake` double DEFAULT NULL,
   `winning` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\Datasets\\resultado.csv"
-INTO TABLE h2.resultado
+INTO TABLE h2.result
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
