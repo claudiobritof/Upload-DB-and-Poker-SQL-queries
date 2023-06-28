@@ -12,6 +12,7 @@ CREATE TABLE customer (
 );
 
 LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\Datasets\\clientes.csv"
+<<<<<<< Updated upstream
 INTO TABLE h2.customer
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
