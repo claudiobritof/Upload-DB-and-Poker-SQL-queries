@@ -11,7 +11,7 @@ CREATE TABLE clientes (
   sigla VARCHAR(2)
 );
 
-LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\resultado.csv"
+LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\Datasets\\clientes4.csv"
 INTO TABLE h2.clientes
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -30,7 +30,7 @@ CREATE TABLE `resultado` (
   `winning` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
-LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Área de Trabalho\\Jr_Data_Engineer_Evaluation\\1_SQL\\resultado.csv"
+LOAD DATA INFILE "C:\\Users\\cabfb\\OneDrive\\Documentos\\Coding\\Projetos\\Python\\Upload-DB-and-Poker-SQL-queries\\Datasets\\resultado.csv"
 INTO TABLE h2.resultado
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
