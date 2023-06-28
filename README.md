@@ -1,5 +1,6 @@
 # Upload-DB-and-Poker-SQL-queries  
-  Uploading a local database and using SQL queries to answer questions related to customer results and profitability on a Online Poker Platform.  
+  This repository contains SQL queries and instructions for uploading a local database and using SQL queries to perform data analysis on real customer results from an online poker platform. The provided queries aim to answer specific questions related to customer activity and profitability.  
+  
 
 
 Given two “.csv” files, containing:  
