@@ -2,12 +2,13 @@
   This repository contains SQL queries and instructions for uploading a local database and using SQL queries to perform data analysis on real customer results from an online poker platform. The provided queries aim to answer specific questions related to customer activity and profitability.  
   
   
-Prerequisites:   
+<b>Prerequisites:</b>   
+  1. A MySQL server installed and running;
   •	A MySQL server installed and running;  
   •	MySQL client (such as MySQL Workbench, which I prefer, or command-line client) for executing the queries;  
   •	The provided CSV files (customer.csv and result.csv), which are available on “Datasets” file on this repository, containing the necessary data to populate the tables.  
 
-Setup and Usage:
+<b>Setup and Usage:</b>  
 1.	Create a new database (I named 'sqlgithub1');
 2.	Create the customer table to store customer information;
 3.	Load the data from the customer.csv file into the customer table;
