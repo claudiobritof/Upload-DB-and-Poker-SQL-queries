@@ -20,18 +20,18 @@
 Given two “.csv” files, containing:  
 
 &ensp;Table ‘resultado’:  
-&emsp;   Data_acesso: the day the player executed the actions.  
-&emsp;   Clientes_id: customer’s id, this column can be used to fetch the information of the customer table.  
-&emsp;   Buyin: total amount bet by the player.  
-&emsp;   Winning: total amount won by the player (when negative, the player's total loss).  
-&emsp;   Rake: the company's profit from this player.  
+&emsp;   entry_date: the day the player executed the actions.  
+&emsp;   customer_id: customer’s id, this column can be used to fetch the information of the customer table.  
+&emsp;   buyin: total amount bet by the player.  
+&emsp;   winning: total amount won by the player (when negative, the player's total loss).  
+&emsp;   rake: the company's profit from this player.  
 
 &ensp;Table ‘clientes’:  
-&emsp;   Id: customer's id. Can be crossed with the customer_id information in the result table.  
-&emsp;   Sexo: player's gender (being m=male and f=female).  
-&emsp;   Data_nascimento: year, month and day of birth of the player.  
+&emsp;   id: customer's id. Can be crossed with the customer_id information in the result table.  
+&emsp;   gender: player's gender (being m=male and f=female).  
+&emsp;   birth_date: year, month and day of birth of the player.  
 &emsp;   Data_cadastro: date and time when the player registered.  
-&emsp;   Cidade: city where the player lives.  
+&emsp;   city: city where the player lives.  
 &emsp;   Sigla: UF (“Federative Unity”, in Brazil is the same as “state”) where the player lives.    
 
 Considering these tables, I answered the following questions using SQL:  
